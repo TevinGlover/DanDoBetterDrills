@@ -11,7 +11,8 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Integer add(int baseValue, int difference) {
-        return null;
+
+        return baseValue+difference;
     }
 
     /**
@@ -20,7 +21,8 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Long add(long baseValue, long difference) {
-        return null;
+
+        return baseValue+difference;
     }
 
     /**
@@ -29,6 +31,7 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Short add(short baseValue, short difference) {
+
         return null;
     }
 
