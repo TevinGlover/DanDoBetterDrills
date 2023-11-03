@@ -32,7 +32,7 @@ public class MathUtilities {
      */
     public Short add(short baseValue, short difference) {
 
-        return null;
+        return (short) (baseValue + difference);
     }
 
     /**
