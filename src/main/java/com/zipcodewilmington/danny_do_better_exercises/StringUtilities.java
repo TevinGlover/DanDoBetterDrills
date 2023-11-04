@@ -8,7 +8,10 @@ public class StringUtilities {
      * @return `Hello World` as a string
      */
     public static String getHelloWorld() {
-        return null;
+
+
+
+        return "hello World";
     }
 
     /**
@@ -17,7 +20,11 @@ public class StringUtilities {
      * @return the concatenation of two strings, `firstSegment`, and `secondSegment`
      */
     public static String concatenation(String firstSegment, String secondSegment){
-        return null;
+
+
+
+
+        //return null;
     }
 
     /**
@@ -83,6 +90,17 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        StringBuilder putItInReverse = new StringBuilder();// the new output of the reverse string
+      // separating the letter into piece to reassemble.
+      // I want to take a string and reverse the input.
+        for(int i = stringToReverse.length() - 1; i >= 0 ; i--) {
+            //and  reverse the order from last charter to first.^
+            putItInReverse.append(stringToReverse.charAt(i));
+        }
+        System.out.println(putItInReverse);
+         return putItInReverse.toString(); //then return the sting as new string.
+
+
+       //return null;
     }
 }
