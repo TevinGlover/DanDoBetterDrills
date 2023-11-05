@@ -86,11 +86,14 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue) {
-        int middle = inputValue.length() / 2;
-        if (inputValue.length() / 2 == 0) {
-            return inputValue.charAt(middle+1);
+        int middleEven = (inputValue.length() / 2) - 1;
+        int middleOdd = (inputValue.length() / 2) ;
+
+        if (inputValue.length() % 2 == 0) {
+            return inputValue.charAt(middleEven);
         } else {// take the number and in the string.
-            return inputValue.charAt(middle);
+            //System.out.println(middleEven + "....."+ middleOdd);
+            return inputValue.charAt(middleOdd);
 
             //return null;
         }
