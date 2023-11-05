@@ -87,37 +87,40 @@ public class StringUtilities {
      */
     public static Character getMiddleCharacter(String inputValue) {
         int middle = inputValue.length() / 2;
-        // take the number and in the string.
-        return inputValue.charAt(middle-1);
-        //return;
-        //return null;
+        if (inputValue.length() / 2 == 0) {
+            return inputValue.charAt(middle+1);
+        } else {// take the number and in the string.
+            return inputValue.charAt(middle);
+
+            //return null;
+        }
+
     }
-
-
 
     /**
      * @param spaceDelimitedString a string, representative of a sentence, containing spaces
      * @return the first sequence of characters
      */
-    public static String getFirstWord(String spaceDelimitedString){
-        // spilting a string but it space and returning the first sub string
-        String[] spaceSpliter = spaceDelimitedString.split("");
+    public static String getFirstWord(String spaceDelimitedString) {
 
-        for(int i = 0; i<= spaceSpliter.length; i++){
-            System.out.println( spaceSpliter[i]);
-
-        }
+        String [] myArray = spaceDelimitedString.split(" ");
 
 
-        return null;
+      return myArray[0];
+
+
+        //return null;
     }
-
+//*******************************************************************************************
     /**
      * @param spaceDelimitedString a string delimited by spaces
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+          String [] myArray = spaceDelimitedString.split(" ");
+
+
+        return myArray[1];
     }
 
     /**
